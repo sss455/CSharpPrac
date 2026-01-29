@@ -1,0 +1,186 @@
+﻿using System;
+using System.Reflection;
+
+namespace SelfCSharp.Chap11
+{
+    internal class ReflectMethods
+    {
+        static void Main(string[] args)
+        {
+            Type stringType = typeof(string);
+
+            // stringクラスで提供されるすべてのpublicメソッドをリスト表示
+            foreach (MethodInfo method in stringType.GetMethods() )
+            {
+                Console.WriteLine(method.Name);
+            }
+
+            Console.WriteLine("--------------------------------------------------------------------------------");
+
+            foreach (PropertyInfo stringProperty in stringType.GetProperties())
+            {
+                Console.WriteLine(stringProperty.Name);
+            }
+        }
+    }
+}
+//IndexOf
+//IndexOf
+//LastIndexOf
+//LastIndexOf
+//LastIndexOf
+//LastIndexOfAny
+//LastIndexOfAny
+//LastIndexOfAny
+//LastIndexOf
+//LastIndexOf
+//LastIndexOf
+//LastIndexOf
+//LastIndexOf
+//LastIndexOf
+//IsNormalized
+//IsNormalized
+//Normalize
+//Normalize
+//get_Chars
+//get_Length
+//Concat
+//Concat
+//Concat
+//Concat
+//Concat
+//Concat
+//Concat
+//Concat
+//Concat
+//Concat
+//Concat
+//Concat
+//Concat
+//Format
+//Format
+//Format
+//Format
+//Format
+//Format
+//Format
+//Format
+//Insert
+//Join
+//Join
+//Join
+//Join
+//Join
+//Join
+//Join
+//Join
+//Join
+//PadLeft
+//PadLeft
+//PadRight
+//PadRight
+//Remove
+//Remove
+//Replace
+//Replace
+//Replace
+//Replace
+//ReplaceLineEndings
+//ReplaceLineEndings
+//Split
+//Split
+//Split
+//Split
+//Split
+//Split
+//Split
+//Split
+//Split
+//Split
+//Substring
+//Substring
+//ToLower
+//ToLower
+//ToLowerInvariant
+//ToUpper
+//ToUpper
+//ToUpperInvariant
+//Trim
+//Trim
+//Trim
+//TrimStart
+//TrimStart
+//TrimStart
+//TrimEnd
+//TrimEnd
+//TrimEnd
+//Contains
+//Contains
+//Contains
+//Contains
+//IndexOf
+//IndexOf
+//IndexOf
+//IndexOf
+//IndexOfAny
+//IndexOfAny
+//IndexOfAny
+//IndexOf
+//IndexOf
+//IndexOf
+//IndexOf
+//Intern
+//IsInterned
+//Compare
+//Compare
+//Compare
+//Compare
+//Compare
+//Compare
+//Compare
+//Compare
+//Compare
+//Compare
+//CompareOrdinal
+//CompareOrdinal
+//CompareTo
+//CompareTo
+//EndsWith
+//EndsWith
+//EndsWith
+//EndsWith
+//Equals
+//Equals
+//Equals
+//Equals
+//Equals
+//op_Equality
+//op_Inequality
+//GetHashCode
+//GetHashCode
+//GetHashCode
+//GetHashCode
+//StartsWith
+//StartsWith
+//StartsWith
+//StartsWith
+//Create
+//Create
+//Create
+//op_Implicit
+//Clone
+//Copy
+//CopyTo
+//CopyTo
+//TryCopyTo
+//ToCharArray
+//ToCharArray
+//IsNullOrEmpty
+//IsNullOrWhiteSpace
+//GetPinnableReference
+//ToString
+//ToString
+//GetEnumerator
+//EnumerateRunes
+//GetTypeCode
+//GetType

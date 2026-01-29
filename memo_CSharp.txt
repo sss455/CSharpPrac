@@ -1,0 +1,41 @@
+Microsoft .NET SDK 6.0.428
+
+インストールが成功しました。
+
+'C:\Program Files\dotnet\' に以下がインストールされました
+    • .NET SDK 6.0.428
+    • .NET Runtime 6.0.36
+    • ASP.NET Core Runtime 6.0.36
+    • .NET Windows Desktop Runtime 6.0.36
+
+この製品は使用状況データを収集します
+    • 詳細およびオプトアウト https://aka.ms/dotnet-cli-telemetry
+
+リソース
+    • .NET ドキュメント https://aka.ms/dotnet-docs
+    • SDK ドキュメント https://aka.ms/dotnet-sdk-docs
+    • リリース ノート https://aka.ms/dotnet6-release-notes
+    • チュートリアル https://aka.ms/dotnet-tutorials
+
+
+
+
+
+
+・新規プロジェクト作成
+dotnet new console --use-program-main
+・プログラム実行
+dotnet run
+・新規クラスの作成
+dotnet new class -n [クラス名]
+
+
+
+
+
+
+
+
+
+
+
