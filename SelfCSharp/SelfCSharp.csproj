@@ -9,6 +9,38 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <StartupObject>SelfCSharp.Chap02.ArrayMulti</StartupObject>
+
+	  <!-- コードアナライザーを有効 -->
+	  <EnableNETAnalyzers>true</EnableNETAnalyzers>
+	  <AnalysisLevel>latest-Recommended</AnalysisLevel>
+	  <!-- うるささレベルを調整 -->
+	  <!--
+		|==============|=======================================================================================
+        | AnalysisMode | うるささレベル
+		|==============|=======================================================================================
+        | Minimum	   | ミニマムっていうから少ないのかな？と思いますが、Defaultよりは指摘してくれるらしい…
+        | Recommended  | これが一応推奨らしい
+        | All	       | "あ～ら、全然掃除できてないじゃないの！一体、どんなしつけを受けてきたのかしらねぇ？"
+		+======================================================================================================
+
+        latest-Recommendedかlatest-Minimumくらいがいいかも？
+		latestは最新の.NETバージョンを指します(.NET 8.0で作ってれば 8.0 = C# 12.0)。6.0にすれば.NET 6.0（=C# 10.0）相当の指摘にすることもできます。
+
+        上記の設定はプロジェクトそれぞれのcsprojに追加する必要があります！面倒！
+        なのでいっぱいプロジェクトがある場合はまとめて設定しましょう。
+        上の階層にDirectory.Build.propsやDirectory.Build.targetsというファイルを作って、
+        さっきの中身を書いておきます。そうすると下の階層のプロジェクトでは自動でよんでくれるようになります。
+        .propsは.csprojより先に読まれるのでコードアナライザーの場合は.propsがいいかも。
+		========================================================================
+		【Directory.Build.props】
+		    <Project>
+              <PropertyGroup>
+                  <EnableNETAnalyzers>true</EnableNETAnalyzers>
+                  <AnalysisLevel>latest-Minimum</AnalysisLevel>
+              </PropertyGroup>
+            </Project>
+		========================================================================
+	-->
   </PropertyGroup>
 
   <ItemGroup>
